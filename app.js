@@ -11,7 +11,16 @@ const __dirname = path.dirname(__filename);
 const app = express();
 
 app.use(express.json())
-app.use(cors())
+app.use(cors(
+    {
+        origin: [
+            "https://nielit-frontend.vercel.app",
+            "https://nielit-panel.vercel.app"
+        ],
+        methods: ["GET", "POST", "PUT", "DELETE","PATCH"],
+        credentials: true
+    }
+))
 
 app.get("/",(req,res)=>{
     res.send("Expert Computer Course")
