@@ -16,7 +16,7 @@ app.use(cors(
     {
         origin: [
             "https://nielit-frontend.vercel.app",
-            "https://nielit-panel.vercel.app",
+            "https://nielit-panel-3cva.vercel.app",
             "http://localhost:3000",
             "http://localhost:3001",
         ],
